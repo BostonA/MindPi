@@ -1,4 +1,4 @@
-#import Com
+import Com
 print "Write the bianry you want to send!"
 while True:
     propperCommand = True
@@ -12,6 +12,6 @@ while True:
             propperCommand = False
             break
     if propperCommand and binary != "":
-        #Com.Init()
-        #Com.Binary(binary)
+        Com.Init()
+        Com.Binary(binary)
         print "Sent Data"

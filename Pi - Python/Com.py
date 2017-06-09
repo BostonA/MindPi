@@ -1,6 +1,8 @@
 import time, RPi.GPIO as GPIO
 def toBinary(n):
     return ''.join(str(1 & int(n) >> i) for i in range(64)[::-1])
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(4,GPIO.OUT)
 LEDon = False
 # Python Codes
 # The Innit() must be ran first to Allert Mindstorms

@@ -1,5 +1,7 @@
 import time, RPi.GPIO as GPIO
 LEDon = False
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(4,GPIO.OUT)
 # Python Codes
 # The Innit() must be ran first to Alert Mindstorms
 # Frequency = Change this to calabrate (in Seconds)

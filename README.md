@@ -11,11 +11,18 @@ You have some information you want to transmit, but in this current version it w
 How To Guide:
   Step 1:
     Download the Zip File with the latest version on your pc/mac (not your pi yet)
+    
     Currently "Version 0.01 ZIPPED!.zip"
+    
   Step 2:
+  
     Do nothing
+    
   Step 3:
+  
     Use the PDF instructions to build the LED holder and attach the LED as to the middle hole on the 5 long liftarm and follow the circut diagram to attach the LED to the Raspberry Pi
+    
   Step 5:
+  
     Unzip and open the Mindstorms EV3 program file in the "mindstorms" folder
   

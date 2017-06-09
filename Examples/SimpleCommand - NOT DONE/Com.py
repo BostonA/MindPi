@@ -1,7 +1,7 @@
 import time, RPi.GPIO as GPIO
 LEDon = False
 # Python Codes
-# The Innit() must be ran first to Allert Mindstorms
+# The Innit() must be ran first to Alert Mindstorms
 # Frequency = Change this to calabrate (in Seconds)
 f = 1
 #

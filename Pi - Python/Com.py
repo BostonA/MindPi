@@ -1,4 +1,6 @@
 import time, RPi.GPIO as GPIO
+def toBinary(n):
+    return ''.join(str(1 & int(n) >> i) for i in range(64)[::-1])
 LEDon = False
 # Python Codes
 # The Innit() must be ran first to Allert Mindstorms
@@ -37,64 +39,22 @@ def Binary(Data):
         time.sleep(f)
     Off()
 def Numeral(Data):
+    zeros = True
     binary = []
-    print "Numeral"
-    for Digit in Data:
-        if Digit == "0":
-            binary.append("0")
-            binary.append("0")
-            binary.append("0")
-            binary.append("0")
-        elif Digit == "1":
-            binary.append("0")
-            binary.append("0")
-            binary.append("0")
-            binary.append("1")
-        elif Digit == "2":
-            binary.append("0")
-            binary.append("0")
-            binary.append("1")
-            binary.append("0")
-        elif Digit == "3":
-            binary.append("0")
-            binary.append("0")
-            binary.append("1")
-            binary.append("1")
-        elif Digit == "4":
-            binary.append("0")
-            binary.append("1")
-            binary.append("0")
-            binary.append("0")
-        elif Digit == "5":
-            binary.append("0")
-            binary.append("1")
-            binary.append("0")
-            binary.append("1")
-        elif Digit == "6":
-            binary.append("0")
-            binary.append("1")
-            binary.append("1")
-            binary.append("0")
-        elif Digit == "7":
-            binary.append("0")
-            binary.append("1")
-            binary.append("1")
-            binary.append("1")
-        elif Digit == "8":
-            binary.append("1")
-            binary.append("0")
-            binary.append("0")
-            binary.append("0")
-        elif Digit == "9":
-            binary.append("1")
-            binary.append("0")
-            binary.append("0")
-            binary.append("1")
+    num = 0
+    b = toBinary(Data)
+    for char in b:
+        num = num+1
+        if char != "0":
+            zeros = False
+        if zeros == False:
+            binary.append(char)
     Binary(binary)
+
 """
 def Hexadecimal(Data):
     print "Hex"
 def ASCII(Data):
     print "ASCII"
 """
-#Numeral("123456789")
+Numeral("12")

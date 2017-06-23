@@ -48,12 +48,12 @@ How To Guide: {{{THIS IS NOT DONE YET}}}
   Step 10:
   Open Mindpi/Pi - Python/Com.py
 
-  Step 11: {IN PROGRESS}
+  Step 11:
 
   Open the Command Line
 
     cd ... {Location of Com.py}
-    sudo mv
+    sudo cp Com.py /usr/lib/python2.7/
 
   Step 12:
 
@@ -64,7 +64,6 @@ How To Guide: {{{THIS IS NOT DONE YET}}}
   Type in 1's and 0's and watch the LED flash if it does not work Check Troubleshooting
 
 -----------------------------------------------------------------------------------------------------------------------------------------
-
   Step 7:
   Open the Mindstorms EV3 program file located in the "Mindstorms" folder.
 

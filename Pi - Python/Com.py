@@ -40,7 +40,8 @@ def Binary(Data):
         print " -- "
         time.sleep(f)
     Off()
-def Numeral(Data):
+def Numeral(Data, ma):
+    Init()
     zeros = True
     binary = []
     num = 0
@@ -51,7 +52,30 @@ def Numeral(Data):
             zeros = False
         if zeros == False:
             binary.append(char)
+    print binary
+    if ma >= 64:
+        lenmax = 7
+    elif ma >= 32:
+        lenmax = 6
+    elif ma >= 16:
+        lenmax = 5
+    elif ma >= 8:
+        lenmax = 4
+    elif ma >= 4:
+        lenmax = 3
+    elif ma >= 2:
+        lenmax = 2
+    elif ma >= 1:
+        lenmax = 1
+    print lenmax
+    while True:
+        if lenmax == len(binary):
+            break
+        else:
+            binary = ["0"] + binary
+    print binary
     Binary(binary)
+    
 
 """
 def Hexadecimal(Data):
@@ -59,4 +83,4 @@ def Hexadecimal(Data):
 def ASCII(Data):
     print "ASCII"
 """
-Numeral("12")
+Numeral(3, 10)

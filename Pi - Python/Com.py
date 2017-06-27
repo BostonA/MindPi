@@ -5,7 +5,7 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(4,GPIO.OUT)
 LEDon = False
 # Python Codes
-# The Innit() must be ran first to Allert Mindstorms
+# The Init() must be ran first to Allert Mindstorms
 # Frequency = Change this to calabrate (in Seconds)
 f = 1
 #
@@ -22,22 +22,17 @@ def Init():
     time.sleep(f)
 def Binary(Data):
     Off()
-    print "IN BIN"
+
     LEDon = False
     for Digit in Data:
         if Digit == "1":
-            print " Dig 1"
             if not LEDon:
                 LEDon = True
-                print "ON"
                 On()
         if Digit == "0":
-            print " Dig 0"
             if LEDon:
-                print "OFF"
                 LEDon = False
                 Off()
-        print " -- "
         time.sleep(f)
     Off()
 def Numeral(Data, ma):
@@ -52,7 +47,6 @@ def Numeral(Data, ma):
             zeros = False
         if zeros == False:
             binary.append(char)
-    print binary
     if ma >= 64:
         lenmax = 7
     elif ma >= 32:
@@ -67,7 +61,6 @@ def Numeral(Data, ma):
         lenmax = 2
     elif ma >= 1:
         lenmax = 1
-    print lenmax
     while True:
         if lenmax == len(binary):
             break
@@ -75,7 +68,7 @@ def Numeral(Data, ma):
             binary = ["0"] + binary
     print binary
     Binary(binary)
-    
+
 
 """
 def Hexadecimal(Data):

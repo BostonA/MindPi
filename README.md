@@ -63,10 +63,32 @@ How To Guide: {{{THIS IS NOT DONE YET}}}
 
   Type in 1's and 0's and watch the LED flash if it does not work Check Troubleshooting
 
------------------------------------------------------------------------------------------------------------------------------------------
-  Step 7:
-  Open the Mindstorms EV3 program file located in the "Mindstorms" folder.
+That is everything for setup... Keep Reading For a How to guide:
 
-  Step 6:
+How to Guide
+
+Transmit Binary
+
+Python:
+	import Com # This just imports the infomation
+	Com.Init()
+	Com.Binary("10001")
+
+Mindstorms:
+
+	BinTransfer MyBlock with two parameters
+
+	Briefcase - (OUTPUT): Binary Output
+
+	# - (INPUT) Len of list
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------
 
 Troubleshooting:
+
+My LED does not light up?
+
+1. Switch the Polarity of the LED (flip the leads)
+2. Try a different LED

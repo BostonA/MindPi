@@ -11,54 +11,54 @@ You have some information you want to transmit, but in this current version it w
 
 -----------------------------------------------------------------------------------------------------------------------------------------
 
-### How To Guide:
+## How To Guide:
 
-  ## Step 1:
+  ### Step 1:
   Download the Zip File with the latest version on your pc/mac (not your pi yet)
 
   Currently "Version .02 ZIPPED!.zip"
 
-  ## Step 2:
+  ### Step 2:
 
   Do nothing
 
-  ## Step 3:
+  ### Step 3:
 
   Use the PDF instructions to build the LED holder.
 
-  ## Step 4:
+  ### Step 4:
 
   Connect the color sensor to the #3 port on the Mindstorms Brick.
 
-  ## Step 5:
+  ### Step 5:
   Attach the LED as to the middle hole on the 5 long liftarm/
 
-  ## Step 6:
+  ### Step 6:
   Follow the circuit diagram to attach the LED to the Raspberry Pi.
 
-  ## Step 7:
+  ### Step 7:
   Plug in the power supply, keyboard and mouse to the Pi/
 
-  ## Step 8:
+  ### Step 8:
 
   Boot up the Pi.
 
-  ## Step 9:
+  ### Step 9:
 
   Get the Python archive onto the pi, there are many ways to do this, you could use the git pull command or a USB and save it to your Desktop.
   Make sure it is unzipped and named "Mindpi"
 
-  ## Step 10:
+  ### Step 10:
   Open Mindpi/Pi - Python/Com.py
 
-  ## Step 11:
+  ### Step 11:
 
   Open the Command Line and enter this into the command line.
 
     cd /home/pi/Desktop/Mindpi/Pi-Python/Com.py
     sudo cp Com.py /usr/lib/python2.7/
 
-  ## Step 12:
+  ### Step 12:
 
   Open Mindpi/Examples/SimpleCommand/CommandLine.py in python 2
 

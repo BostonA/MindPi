@@ -16,11 +16,11 @@ You have some information you want to transmit, but in this current version it w
   ### Step 1:
   Download the Zip File with the latest version on your pc/mac (not your pi yet)
 
-  Currently "Version .02 ZIPPED!.zip"
+  Currently "Version .03 ZIPPED!.zip"
 
   ### Step 2:
 
-  Do nothing
+  Unzip File
 
   ### Step 3:
 

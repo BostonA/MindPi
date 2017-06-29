@@ -9,6 +9,8 @@ How it works:
 
 You have some information you want to transmit, but in this current version it will only accept binary inputs, so unfortunately you will need to convert your info to binary. So then you input the series of ones and zeros you want to transfer to the “Com.Binary()” python function on your Raspberry Pi the Led will flash in this pattern. I chose to use python because it is preinstalled on the Raspberry Pi and I already have a basic knowledge of how it works!. This flashing can be read by a Ev3 Color Sensor controlled by a  “My Block” called BinaryTransfer (what Ev3-G, the Lego Mindstorms Programing language, calls a function) waiting for these flashes on the Mindstorms Brick. When the message has reached the length specified by the numerical input to the My Block it stops recording and returns the binary that it recorded. This would conclude the transfer of data from one system to another.
 
+-----------------------------------------------------------------------------------------------------------------------------------------
+
 How To Guide: {{{THIS IS NOT DONE YET}}}
 
   Step 1:
@@ -65,14 +67,16 @@ How To Guide: {{{THIS IS NOT DONE YET}}}
 
 That is everything for setup... Keep Reading For a How to guide:
 
+-----------------------------------------------------------------------------------------------------------------------------------------
+
 How to Guide
 
-Transmit Binary
+Transmit Binary:
 
 Python:
 	import Com # This just imports the infomation
 	Com.Init()
-	Com.Binary("10001")
+	Com.Binary("10001") # The number being sent
 
 Mindstorms:
 
@@ -80,7 +84,25 @@ Mindstorms:
 
 	Briefcase - (OUTPUT): Binary Output
 
-	# - (INPUT) Len of list
+	# - (INPUT) Len of bin being sent!
+
+Transmit Numeral Data:
+
+Python:
+	import Com # This just imports the information
+	Com.Numeral(10, 100)
+  First Num: 10 -> The number being sent.
+  Second Num: 100 -> The max number that can be sent.
+
+Mindstorms:
+
+	BinTransfer MyBlock with two parameters
+
+	Briefcase - (OUTPUT): Binary Output
+
+	Min - (INPUT) Lowest Number in send range
+
+  Max - (INPUT) Highest Number in send range
 
 
 
@@ -92,3 +114,10 @@ My LED does not light up?
 
 1. Switch the Polarity of the LED (flip the leads)
 2. Try a different LED
+3. ?? - Your Screwed - ??
+
+-----------------------------------------------------------------------------------------------------------------------------------------
+
+If you have any questions please do not hesitate to email me at:
+
+Bostonwabrams@gmail.com

@@ -75,6 +75,7 @@ That is everything for setup... Keep Reading For a How to guide:
 ## Transmit Binary:
 
 Python:
+
 	import Com # This just imports the infomation
 	Com.Init()
 	Com.Binary("10001") # The number being sent
@@ -90,6 +91,7 @@ Mindstorms:
 ## Transmit Numeral Data:
 
 Python:
+
 	import Com # This just imports the information
 	Com.Numeral(10, 100)
   First Num: 10 -> The number being sent.
